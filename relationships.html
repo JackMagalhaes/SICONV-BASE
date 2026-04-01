@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>bd_portal Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="bower/html5shiv/html5shiv.min.js"></script>
+        <script src="bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="index.html" class="navbar-brand"><b>bd_portal</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <!--<li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>-->
+                                <li><a href="routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>All Relationships</h1>
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 class="box-title">Diagrams</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom">
+                                <!-- Tabs within a box -->
+                                <h5>By default only columns that are primary keys, foreign keys or indexes are shown.</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#compactDegreeImg-chart" data-toggle="tab" aria-expanded="true">Compact</a></li>
+                                    <li class=""><a href="#largeDegreeImg-chart" data-toggle="tab" aria-expanded="true">Large</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="compactDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="compactRelationshipsDiagram" name="compactRelationshipsDiagram">
+<area shape="rect" id="node1" href="tables/acomp_obras_contratos_medicoes_modulo_empresas.html" target="_top" title="acomp_obras_contratos_medicoes_modulo_empresas" alt="" coords="927,1444,1469,1591">
+<area shape="rect" id="node38" href="tables/proposta.html" target="_top" title="proposta" alt="" coords="469,1637,793,1784">
+<area shape="rect" id="node2" href="tables/ajuste_plano_trabalho.html" target="_top" title="ajuste_plano_trabalho" alt="" coords="1021,1608,1375,1755">
+<area shape="rect" id="node3" href="tables/apoiadores_emendas_programas.html" target="_top" title="apoiadores_emendas_programas" alt="" coords="379,5,883,152">
+<area shape="rect" id="node29" href="tables/programa.html" target="_top" title="programa" alt="" coords="5,293,335,411">
+<area shape="rect" id="node4" href="tables/consorcios.html" target="_top" title="consorcios" alt="" coords="1056,1772,1340,1889">
+<area shape="rect" id="node5" href="tables/contrato.html" target="_top" title="contrato" alt="" coords="2273,2532,2610,2679">
+<area shape="rect" id="node22" href="tables/licitacao.html" target="_top" title="licitacao" alt="" coords="1663,2383,2027,2529">
+<area shape="rect" id="node6" href="tables/convenio.html" target="_top" title="convenio" alt="" coords="1035,2248,1361,2395">
+<area shape="rect" id="node7" href="tables/cronograma_desembolso.html" target="_top" title="cronograma_desembolso" alt="" coords="1654,1257,2037,1404">
+<area shape="rect" id="node8" href="tables/desbloqueio_cr.html" target="_top" title="desbloqueio_cr" alt="" coords="1694,1749,1997,1867">
+<area shape="rect" id="node9" href="tables/desembolso.html" target="_top" title="desembolso" alt="" coords="1697,1585,1993,1732">
+<area shape="rect" id="node10" href="tables/emenda.html" target="_top" title="emenda" alt="" coords="1015,1979,1381,2096">
+<area shape="rect" id="node11" href="tables/empenho.html" target="_top" title="empenho" alt="" coords="1707,1884,1983,2031">
+<area shape="rect" id="node12" href="tables/empenho_desembolso.html" target="_top" title="empenho_desembolso" alt="" coords="2321,1720,2562,1867">
+<area shape="rect" id="node13" href="tables/etapa_crono_fisico.html" target="_top" title="etapa_crono_fisico" alt="" coords="2299,3144,2584,3261">
+<area shape="rect" id="node23" href="tables/meta_crono_fisico.html" target="_top" title="meta_crono_fisico" alt="" coords="1707,3144,1983,3320">
+<area shape="rect" id="node14" href="tables/historico_projeto_basico.html" target="_top" title="historico_projeto_basico" alt="" coords="1070,2113,1326,2231">
+<area shape="rect" id="node15" href="tables/historico_situacao.html" target="_top" title="historico_situacao" alt="" coords="1736,1421,1955,1568">
+<area shape="rect" id="node16" href="tables/ingresso_contrapartida.html" target="_top" title="ingresso_contrapartida" alt="" coords="1689,2084,2001,2201">
+<area shape="rect" id="node17" href="tables/inst_cont_contratos_lotes_empresas_modulo_empresas.html" target="_top" title="inst_cont_contratos_lotes_empresas_modulo_empresas" alt="" coords="1513,3337,2177,3484">
+<area shape="rect" id="node19" href="tables/inst_cont_proposta_aio_modulo_empresas.html" target="_top" title="inst_cont_proposta_aio_modulo_empresas" alt="" coords="968,2975,1428,3121">
+<area shape="rect" id="node18" href="tables/inst_cont_metas_submetas_po_modulo_empresas.html" target="_top" title="inst_cont_metas_submetas_po_modulo_empresas" alt="" coords="1558,3501,2133,3648">
+<area shape="rect" id="node20" href="tables/itens_licitacao.html" target="_top" title="itens_licitacao" alt="" coords="2221,2368,2661,2515">
+<area shape="rect" id="node21" href="tables/justificativas_proposta.html" target="_top" title="justificativas_proposta" alt="" coords="1013,2448,1383,2565">
+<area shape="rect" id="node24" href="tables/obtv_convenente.html" target="_top" title="obtv_convenente" alt="" coords="2274,2816,2609,2933">
+<area shape="rect" id="node25" href="tables/pagamento.html" target="_top" title="pagamento" alt="" coords="1729,2816,1962,2963">
+<area shape="rect" id="node26" href="tables/pagamento_tributo.html" target="_top" title="pagamento_tributo" alt="" coords="1739,2547,1952,2664">
+<area shape="rect" id="node27" href="tables/pergunta_selecao_pac.html" target="_top" title="pergunta_selecao_pac" alt="" coords="485,169,777,316">
+<area shape="rect" id="node28" href="tables/plano_aplicacao_detalhado.html" target="_top" title="plano_aplicacao_detalhado" alt="" coords="1062,3139,1334,3256">
+<area shape="rect" id="node30" href="tables/programa_proponentes.html" target="_top" title="programa_proponentes" alt="" coords="507,563,754,685">
+<area shape="rect" id="node37" href="tables/proponentes.html" target="_top" title="proponentes" alt="" coords="40,592,300,739">
+<area shape="rect" id="node31" href="tables/programa_proposta.html" target="_top" title="programa_proposta" alt="" coords="1089,313,1307,436">
+<area shape="rect" id="node32" href="tables/projeto_basico_acffo_modulo_empresas.html" target="_top" title="projeto_basico_acffo_modulo_empresas" alt="" coords="979,811,1417,957">
+<area shape="rect" id="node33" href="tables/projeto_basico_lae_modulo_empresas.html" target="_top" title="projeto_basico_lae_modulo_empresas" alt="" coords="1659,829,2032,1005">
+<area shape="rect" id="node34" href="tables/projeto_basico_metas_modulo_empresas.html" target="_top" title="projeto_basico_metas_modulo_empresas" alt="" coords="2230,800,2653,947">
+<area shape="rect" id="node35" href="tables/projeto_basico_proposta_modulo_empresas.html" target="_top" title="projeto_basico_proposta_modulo_empresas" alt="" coords="980,1011,1416,1157">
+<area shape="rect" id="node36" href="tables/projeto_basico_submetas_modulo_empresas.html" target="_top" title="projeto_basico_submetas_modulo_empresas" alt="" coords="2705,771,3229,917">
+<area shape="rect" id="node39" href="tables/proposta_selecao_pac.html" target="_top" title="proposta_selecao_pac" alt="" coords="421,369,841,545">
+<area shape="rect" id="node40" href="tables/prorroga_oficio.html" target="_top" title="prorroga_oficio" alt="" coords="1702,2681,1989,2799">
+<area shape="rect" id="node41" href="tables/resposta_selecao_pac.html" target="_top" title="resposta_selecao_pac" alt="" coords="1052,149,1344,296">
+<area shape="rect" id="node42" href="tables/siconv_coordenadas_obra.html" target="_top" title="siconv_coordenadas_obra" alt="" coords="1029,1175,1367,1292">
+<area shape="rect" id="node43" href="tables/siconv_proposta_formalizacao_pac.html" target="_top" title="siconv_proposta_formalizacao_pac" alt="" coords="1033,453,1363,600">
+<area shape="rect" id="node44" href="tables/siconv_resumo_fisico_financeiro.html" target="_top" title="siconv_resumo_fisico_financeiro" alt="" coords="944,1309,1452,1427">
+<area shape="rect" id="node45" href="tables/solicitacao_alteracao.html" target="_top" title="solicitacao_alteracao" alt="" coords="1719,2219,1971,2365">
+<area shape="rect" id="node46" href="tables/solicitacao_rendimento_aplicacao.html" target="_top" title="solicitacao_rendimento_aplicacao" alt="" coords="1603,2980,2087,3127">
+<area shape="rect" id="node47" href="tables/termo_aditivo.html" target="_top" title="termo_aditivo" alt="" coords="2317,2104,2565,2251">
+<area shape="rect" id="node48" href="tables/vrpl_lotes_fornecedores_licitacao_modulo_empresas.html" target="_top" title="vrpl_lotes_fornecedores_licitacao_modulo_empresas" alt="" coords="385,703,876,820">
+<area shape="rect" id="node49" href="tables/vrpl_metas_submetas_modulo_empresas.html" target="_top" title="vrpl_metas_submetas_modulo_empresas" alt="" coords="1615,617,2075,764">
+<area shape="rect" id="node50" href="tables/vrpl_proposta_licitacao_modulo_empresas.html" target="_top" title="vrpl_proposta_licitacao_modulo_empresas" alt="" coords="1007,617,1389,793">
+</map>
+                                        <a name='diagram'><img id="compactDegreeImg" src="diagrams/summary/relationships.real.compact.png" usemap="#compactRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="largeDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="largeRelationshipsDiagram" name="largeRelationshipsDiagram">
+<area shape="rect" id="node1" href="tables/acomp_obras_contratos_medicoes_modulo_empresas.html" target="_top" title="acomp_obras_contratos_medicoes_modulo_empresas" alt="" coords="927,859,1469,1216">
+<area shape="rect" id="node38" href="tables/proposta.html" target="_top" title="proposta" alt="" coords="469,2348,793,3468">
+<area shape="rect" id="node2" href="tables/ajuste_plano_trabalho.html" target="_top" title="ajuste_plano_trabalho" alt="" coords="1021,1233,1375,1444">
+<area shape="rect" id="node3" href="tables/apoiadores_emendas_programas.html" target="_top" title="apoiadores_emendas_programas" alt="" coords="379,5780,883,6225">
+<area shape="rect" id="node29" href="tables/programa.html" target="_top" title="programa" alt="" coords="5,5236,335,5887">
+<area shape="rect" id="node4" href="tables/consorcios.html" target="_top" title="consorcios" alt="" coords="1056,1461,1340,1789">
+<area shape="rect" id="node5" href="tables/contrato.html" target="_top" title="contrato" alt="" coords="2273,3767,2610,4183">
+<area shape="rect" id="node22" href="tables/licitacao.html" target="_top" title="licitacao" alt="" coords="1663,4129,2027,4721">
+<area shape="rect" id="node6" href="tables/convenio.html" target="_top" title="convenio" alt="" coords="1035,2517,1361,3755">
+<area shape="rect" id="node7" href="tables/cronograma_desembolso.html" target="_top" title="cronograma_desembolso" alt="" coords="1654,647,2037,916">
+<area shape="rect" id="node8" href="tables/desbloqueio_cr.html" target="_top" title="desbloqueio_cr" alt="" coords="1694,2631,1997,2929">
+<area shape="rect" id="node9" href="tables/desembolso.html" target="_top" title="desembolso" alt="" coords="1697,2947,1993,3333">
+<area shape="rect" id="node10" href="tables/emenda.html" target="_top" title="emenda" alt="" coords="1015,1879,1381,2236">
+<area shape="rect" id="node11" href="tables/empenho.html" target="_top" title="empenho" alt="" coords="1707,3351,1983,3943">
+<area shape="rect" id="node12" href="tables/empenho_desembolso.html" target="_top" title="empenho_desembolso" alt="" coords="2321,3135,2562,3287">
+<area shape="rect" id="node13" href="tables/etapa_crono_fisico.html" target="_top" title="etapa_crono_fisico" alt="" coords="2299,4739,2584,5184">
+<area shape="rect" id="node23" href="tables/meta_crono_fisico.html" target="_top" title="meta_crono_fisico" alt="" coords="1707,4739,1983,5301">
+<area shape="rect" id="node14" href="tables/historico_projeto_basico.html" target="_top" title="historico_projeto_basico" alt="" coords="1070,2253,1326,2464">
+<area shape="rect" id="node15" href="tables/historico_situacao.html" target="_top" title="historico_situacao" alt="" coords="1736,933,1955,1173">
+<area shape="rect" id="node16" href="tables/ingresso_contrapartida.html" target="_top" title="ingresso_contrapartida" alt="" coords="1689,3960,2001,4112">
+<area shape="rect" id="node17" href="tables/inst_cont_contratos_lotes_empresas_modulo_empresas.html" target="_top" title="inst_cont_contratos_lotes_empresas_modulo_empresas" alt="" coords="1513,5840,2177,6256">
+<area shape="rect" id="node19" href="tables/inst_cont_proposta_aio_modulo_empresas.html" target="_top" title="inst_cont_proposta_aio_modulo_empresas" alt="" coords="968,4645,1428,4856">
+<area shape="rect" id="node18" href="tables/inst_cont_metas_submetas_po_modulo_empresas.html" target="_top" title="inst_cont_metas_submetas_po_modulo_empresas" alt="" coords="1558,5319,2133,5823">
+<area shape="rect" id="node20" href="tables/itens_licitacao.html" target="_top" title="itens_licitacao" alt="" coords="2221,4200,2661,4557">
+<area shape="rect" id="node21" href="tables/justificativas_proposta.html" target="_top" title="justificativas_proposta" alt="" coords="1013,3772,1383,4071">
+<area shape="rect" id="node24" href="tables/obtv_convenente.html" target="_top" title="obtv_convenente" alt="" coords="2274,1191,2609,1401">
+<area shape="rect" id="node25" href="tables/pagamento.html" target="_top" title="pagamento" alt="" coords="1729,1191,1962,1577">
+<area shape="rect" id="node26" href="tables/pagamento_tributo.html" target="_top" title="pagamento_tributo" alt="" coords="1739,1595,1952,1747">
+<area shape="rect" id="node27" href="tables/pergunta_selecao_pac.html" target="_top" title="pergunta_selecao_pac" alt="" coords="485,5611,777,5763">
+<area shape="rect" id="node28" href="tables/plano_aplicacao_detalhado.html" target="_top" title="plano_aplicacao_detalhado" alt="" coords="1062,4124,1334,4628">
+<area shape="rect" id="node30" href="tables/programa_proponentes.html" target="_top" title="programa_proponentes" alt="" coords="507,2208,754,2331">
+<area shape="rect" id="node37" href="tables/proponentes.html" target="_top" title="proponentes" alt="" coords="40,2759,300,3145">
+<area shape="rect" id="node31" href="tables/programa_proposta.html" target="_top" title="programa_proposta" alt="" coords="1089,4873,1307,4996">
+<area shape="rect" id="node32" href="tables/projeto_basico_acffo_modulo_empresas.html" target="_top" title="projeto_basico_acffo_modulo_empresas" alt="" coords="979,5,1417,275">
+<area shape="rect" id="node33" href="tables/projeto_basico_lae_modulo_empresas.html" target="_top" title="projeto_basico_lae_modulo_empresas" alt="" coords="1659,240,2032,480">
+<area shape="rect" id="node34" href="tables/projeto_basico_metas_modulo_empresas.html" target="_top" title="projeto_basico_metas_modulo_empresas" alt="" coords="2230,211,2653,509">
+<area shape="rect" id="node35" href="tables/projeto_basico_proposta_modulo_empresas.html" target="_top" title="projeto_basico_proposta_modulo_empresas" alt="" coords="980,292,1416,444">
+<area shape="rect" id="node36" href="tables/projeto_basico_submetas_modulo_empresas.html" target="_top" title="projeto_basico_submetas_modulo_empresas" alt="" coords="2705,181,3229,685">
+<area shape="rect" id="node39" href="tables/proposta_selecao_pac.html" target="_top" title="proposta_selecao_pac" alt="" coords="421,5207,841,5593">
+<area shape="rect" id="node40" href="tables/prorroga_oficio.html" target="_top" title="prorroga_oficio" alt="" coords="1702,1764,1989,2033">
+<area shape="rect" id="node41" href="tables/resposta_selecao_pac.html" target="_top" title="resposta_selecao_pac" alt="" coords="1052,5569,1344,5721">
+<area shape="rect" id="node42" href="tables/siconv_coordenadas_obra.html" target="_top" title="siconv_coordenadas_obra" alt="" coords="1029,461,1367,643">
+<area shape="rect" id="node43" href="tables/siconv_proposta_formalizacao_pac.html" target="_top" title="siconv_proposta_formalizacao_pac" alt="" coords="1033,5359,1363,5511">
+<area shape="rect" id="node44" href="tables/siconv_resumo_fisico_financeiro.html" target="_top" title="siconv_resumo_fisico_financeiro" alt="" coords="944,660,1452,841">
+<area shape="rect" id="node45" href="tables/solicitacao_alteracao.html" target="_top" title="solicitacao_alteracao" alt="" coords="1719,2373,1971,2613">
+<area shape="rect" id="node46" href="tables/solicitacao_rendimento_aplicacao.html" target="_top" title="solicitacao_rendimento_aplicacao" alt="" coords="1603,2087,2087,2356">
+<area shape="rect" id="node47" href="tables/termo_aditivo.html" target="_top" title="termo_aditivo" alt="" coords="2317,2177,2565,2564">
+<area shape="rect" id="node48" href="tables/vrpl_lotes_fornecedores_licitacao_modulo_empresas.html" target="_top" title="vrpl_lotes_fornecedores_licitacao_modulo_empresas" alt="" coords="385,4949,876,5189">
+<area shape="rect" id="node49" href="tables/vrpl_metas_submetas_modulo_empresas.html" target="_top" title="vrpl_metas_submetas_modulo_empresas" alt="" coords="1615,6273,2075,6865">
+<area shape="rect" id="node50" href="tables/vrpl_proposta_licitacao_modulo_empresas.html" target="_top" title="vrpl_proposta_licitacao_modulo_empresas" alt="" coords="1007,5013,1389,5341">
+</map>
+                                        <a name='diagram'><img id="largeDegreeImg" src="diagrams/summary/relationships.real.large.png" usemap="#largeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="bower/pdfmake/pdfmake.min.js"></script>
+        <script src="bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="bower/codemirror/codemirror.js"></script>
+        <script src="bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="relationships.js"></script>
+        <script src="schemaSpy.js"></script>
+    </body>
+</html>
